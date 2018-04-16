@@ -9,3 +9,18 @@ services:
         MYSQL_DATABASE: db-pessoa
       ports:
         - "3308:3306"
+
+    mysql-legacy:
+      image: mysql:8.0.2
+      environment:
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: db-produto
+      ports:
+        - "3309:3306"
+        
+#    client:
+ #       image: mysql:5.7
+  #      depends_on:
+   #         - mysql-dev
+    #    command: mysql -uroot -ppassword -hmysql-dev db-pessoa
+    
