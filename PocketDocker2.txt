@@ -1,0 +1,6 @@
+---------------------------------------------
+Pocket - Docker
+---------------------------------------------
+docker --version
+docker image ls -a
+docker container ls -a
